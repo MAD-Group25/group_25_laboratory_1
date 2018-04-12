@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.nico.first_laboratory_vers2.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:autoSizeTextType="uniform"
+        android:backgroundTintMode="screen"
+        android:text="BOOK SHARING APPLICATION"
+        android:textSize="25dip" />
+
+
+    <Button
+        android:id="@+id/Bt_add_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10px"
+        android:layout_marginRight="10px"
+        android:layout_marginTop="20dp"
+        android:background="#c5ffc1"
+        android:text="@string/add_user"
+
+        />
+
+    <Button
+        android:id="@+id/Bt_show_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10px"
+        android:layout_marginRight="10px"
+        android:layout_marginTop="40dp"
+        android:background="#c5ffc1"
+        android:text="@string/show_user" />
+
+    <Button
+        android:id="@+id/Bt_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10px"
+        android:layout_marginRight="10px"
+        android:layout_marginTop="40dp"
+        android:background="#c5ffc1"
+        android:text="@string/login" />
+
+
+</LinearLayout>

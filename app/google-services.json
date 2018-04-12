@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "78498240941",
+    "firebase_url": "https://group-25-book-sharing.firebaseio.com",
+    "project_id": "group-25-book-sharing",
+    "storage_bucket": "group-25-book-sharing.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:78498240941:android:60f1faac39d0482d",
+        "android_client_info": {
+          "package_name": "com.example.nico.first_laboratory_vers2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "78498240941-20td1l1snj6f7nkl4phjlsnlhkcrr51l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAmzxTXQUtjpiVl36mD4c0fl_V_A3MytU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

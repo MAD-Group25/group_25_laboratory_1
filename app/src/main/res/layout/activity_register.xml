@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nico.first_laboratory_vers2.RegisterActivity"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="157dp">
+
+
+
+        <ImageButton
+            android:id="@+id/Ib_set_image"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            app:srcCompat="@android:drawable/ic_menu_camera" />
+
+
+        <ImageView
+            android:id="@+id/Iv_image"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@android:drawable/btn_star" />
+
+
+        <Button
+            android:id="@+id/Bt_register"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/Ib_set_image"
+            android:layout_toEndOf="@+id/Iv_image"
+            android:layout_toRightOf="@+id/Iv_image"
+            android:background="#c5ffc1"
+            android:text="REGISTER" />
+
+        <Button
+            android:id="@+id/Bt_back"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/Bt_register"
+            android:layout_marginTop="9dp"
+            android:layout_toEndOf="@+id/Iv_image"
+            android:layout_toRightOf="@+id/Iv_image"
+            android:background="#ffc1dd"
+            android:text="Back" />
+
+
+    </RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/Et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10px"
+        android:layout_marginRight="10px"
+        android:layout_marginTop="150px"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/Et_mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="e-Mail"
+        android:layout_marginLeft="10px"
+        android:layout_marginRight="10px"/>
+
+
+    <EditText
+        android:id="@+id/Et_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Short Bio"
+        android:layout_marginLeft="10px"
+        android:layout_marginRight="10px"/>
+
+
+    <EditText
+        android:id="@+id/Et_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Age"
+        android:layout_marginLeft="10px"
+        android:layout_marginRight="10px" />
+
+    <EditText
+        android:id="@+id/Et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:layout_marginLeft="10px"
+        android:layout_marginRight="10px"/>
+
+
+
+
+</LinearLayout>
