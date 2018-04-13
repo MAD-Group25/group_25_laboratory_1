@@ -242,18 +242,18 @@ public class RegisterActivity extends AppCompatActivity {
         ed.commit();
 
 
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference myRefname = database.getReference("/userN/name");
-        DatabaseReference myRefmail = database.getReference("/userN/mail");
-        DatabaseReference myRefage = database.getReference("/userN/age");
-        DatabaseReference myRefbio = database.getReference("/userN/bio");
-        
-
-
-        myRefname.setValue(sname);
-        myRefmail.setValue(semail);
-        myRefbio.setValue(sbio);
-        myRefage.setValue(sage);
+//        FirebaseDatabase database = FirebaseDatabase.getInstance();
+//        DatabaseReference myRefname = database.getReference("/userN/name");
+//        DatabaseReference myRefmail = database.getReference("/userN/mail");
+//        DatabaseReference myRefage = database.getReference("/userN/age");
+//        DatabaseReference myRefbio = database.getReference("/userN/bio");
+//
+//
+//
+//        myRefname.setValue(sname);
+//        myRefmail.setValue(semail);
+//        myRefbio.setValue(sbio);
+//        myRefage.setValue(sage);
 
 
 
