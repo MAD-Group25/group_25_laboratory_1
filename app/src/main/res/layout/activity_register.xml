@@ -28,7 +28,7 @@
             android:layout_height="200dp"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            app:srcCompat="@android:drawable/btn_star" />
+            app:srcCompat="@drawable/ic_profile_batman" />
 
 
         <Button
