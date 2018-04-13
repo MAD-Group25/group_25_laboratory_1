@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookActivity"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="157dp">
+
+
+
+        <ImageButton
+            android:id="@+id/Ib_set_image"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            app:srcCompat="@android:drawable/ic_menu_camera" />
+
+
+        <ImageView
+            android:id="@+id/Iv_image"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/book_ic_launcher" />
+
+
+        <Button
+            android:id="@+id/Bt_register"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/Ib_set_image"
+            android:layout_toEndOf="@+id/Iv_image"
+            android:layout_toRightOf="@+id/Iv_image"
+            android:background="#c5ffc1"
+            android:text="ADD BOOK" />
+
+        <Button
+            android:id="@+id/Bt_back"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/Bt_register"
+            android:layout_marginTop="9dp"
+            android:layout_toEndOf="@+id/Iv_image"
+            android:layout_toRightOf="@+id/Iv_image"
+            android:background="#ffc1dd"
+            android:text="Back" />
+
+
+    </RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/Et_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10px"
+        android:layout_marginRight="10px"
+        android:layout_marginTop="150px"
+        android:ems="10"
+        android:hint="Title"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/Et_author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Author"
+        android:layout_marginLeft="10px"
+        android:layout_marginRight="10px"/>
+
+
+    <EditText
+        android:id="@+id/Et_publisher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Publisher"
+        android:layout_marginLeft="10px"
+        android:layout_marginRight="10px"/>
+
+
+    <EditText
+        android:id="@+id/Et_year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Edition year"
+        android:layout_marginLeft="10px"
+        android:layout_marginRight="10px" />
+
+    <EditText
+        android:id="@+id/Et_condition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Condition of the book (from 1 to 10)"
+        android:layout_marginLeft="10px"
+        android:layout_marginRight="10px"/>
+
+</LinearLayout>
