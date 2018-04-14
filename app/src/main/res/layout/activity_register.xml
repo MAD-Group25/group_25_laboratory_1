@@ -3,14 +3,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context="com.example.nico.first_laboratory_vers2.RegisterActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    >
 
 
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="157dp">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
 
 
@@ -24,33 +25,11 @@
 
         <ImageView
             android:id="@+id/Iv_image"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
             android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
             app:srcCompat="@drawable/ic_profile_batman" />
 
-
-        <Button
-            android:id="@+id/Bt_register"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_below="@+id/Ib_set_image"
-            android:layout_toEndOf="@+id/Iv_image"
-            android:layout_toRightOf="@+id/Iv_image"
-            android:background="#c5ffc1"
-            android:text="REGISTER" />
-
-        <Button
-            android:id="@+id/Bt_back"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_below="@+id/Bt_register"
-            android:layout_marginTop="9dp"
-            android:layout_toEndOf="@+id/Iv_image"
-            android:layout_toRightOf="@+id/Iv_image"
-            android:background="#ffc1dd"
-            android:text="Back" />
 
 
     </RelativeLayout>
@@ -62,7 +41,6 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="10px"
         android:layout_marginRight="10px"
-        android:layout_marginTop="150px"
         android:ems="10"
         android:hint="Name"
         android:inputType="textPersonName" />
@@ -108,6 +86,28 @@
         android:hint="Password"
         android:layout_marginLeft="10px"
         android:layout_marginRight="10px"/>
+
+    <Button
+        android:id="@+id/Bt_register"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginLeft="10px"
+        android:layout_marginRight="10px"
+        android:background="#c5ffc1"
+        android:text="REGISTER" />
+
+
+    <Button
+        android:id="@+id/Bt_back"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginLeft="10px"
+        android:layout_marginRight="10px"
+        android:background="#ffc1dd"
+        android:text="Back" />
+
+
+
 
 
 
