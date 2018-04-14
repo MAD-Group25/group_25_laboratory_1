@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.nico.first_laboratory_vers2.MainActivity">
+    tools:context="com.example.nico.first_laboratory_vers2.MainActivity"
+    android:background="#82C168">
 
     <TextView
         android:layout_width="wrap_content"
@@ -14,41 +15,41 @@
         android:layout_marginTop="10dp"
         android:autoSizeTextType="uniform"
         android:backgroundTintMode="screen"
-        android:text="BOOK SHARING APPLICATION"
-        android:textSize="25dip" />
+        android:text="Welcome to THE Book Sharing"
+        android:textSize="25dip"
+        android:textColor="#f1f1f2"/>
 
 
     <Button
         android:id="@+id/Bt_add_user"
-        android:layout_width="match_parent"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10px"
-        android:layout_marginRight="10px"
         android:layout_marginTop="60dp"
-        android:background="#c5ffc1"
+        android:layout_gravity="center"
+        android:background="@drawable/button_shape"
         android:text="@string/add_user"
+        android:textColor="#82C168" />
 
-        />
 
     <Button
         android:id="@+id/Bt_show_user"
-        android:layout_width="match_parent"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10px"
-        android:layout_marginRight="10px"
+        android:layout_gravity="center"
         android:layout_marginTop="70dp"
-        android:background="#c5ffc1"
-        android:text="@string/show_user" />
+        android:background="@drawable/button_shape"
+        android:text="@string/show_user"
+        android:textColor="#82C168"/>
 
     <Button
         android:id="@+id/Bt_login"
-        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10px"
-        android:layout_marginRight="10px"
+        android:layout_gravity="center"
+        android:layout_width="200dp"
         android:layout_marginTop="70dp"
-        android:background="#c5ffc1"
-        android:text="@string/login" />
+        android:background="@drawable/button_shape"
+        android:text="@string/login"
+        android:textColor="#82C168"/>
 
 
 </LinearLayout>
