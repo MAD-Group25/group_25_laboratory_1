@@ -1,5 +1,6 @@
 package com.example.nico.first_laboratory_vers2;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -7,11 +8,15 @@ import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Base64;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 
 public class UserAreaActivity extends AppCompatActivity {
+
+    private Button add_book;
 
 
     SharedPreferences preferences;
@@ -21,8 +26,9 @@ public class UserAreaActivity extends AppCompatActivity {
         Bitmap imageBit;
         setContentView(R.layout.activity_user_area);
 
-        Bundle bundle = getIntent().getExtras();
+        add_book = (Button) findViewById(R.id.Bt_add_book);
 
+        Bundle bundle = getIntent().getExtras();
 
         preferences = getSharedPreferences("mypref", 0);
         String name= preferences.getString("n"+0, "fail name");
@@ -46,7 +52,25 @@ public class UserAreaActivity extends AppCompatActivity {
             iimage.setImageBitmap(imageBit);
         }
 //        iimage.setImageBitmap(bitmap);
+
+
+        add_book.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                addBook(v);
+
+            }
+        });
     }
+
+    public void addBook( View view){
+
+        Intent registerIntent = new Intent(this, BookActivity.class);
+        startActivity(registerIntent);
+
+    }
+
 
     public static Bitmap decode(String input){
         byte[] decodedByte = Base64.decode(input, 0);

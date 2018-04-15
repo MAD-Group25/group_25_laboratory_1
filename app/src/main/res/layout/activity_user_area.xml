@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.nico.first_laboratory_vers2.UserAreaActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/colorPrimary">
 
 
 
@@ -72,6 +73,16 @@
         android:id="@+id/showemail"
         android:layout_width="match_parent"
         android:layout_height="20dp" />
+
+    <Button
+        android:id="@+id/Bt_add_book"
+        android:layout_width="264dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/colorAccent"
+        android:ems="10"
+        android:text="ADD A BOOK" />
+
 
 
 </LinearLayout>
