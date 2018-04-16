@@ -10,69 +10,96 @@
 
 
     <RelativeLayout
-        android:layout_width="545dp"
-        android:layout_height="240dp"
+        android:layout_width="match_parent"
+        android:layout_height="264dp"
         android:layout_marginVertical="40dp">
 
-
-        <ImageButton
-            android:id="@+id/Ib_set_image"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-
-            app:srcCompat="@android:drawable/ic_menu_camera" />
+            android:text="Welcome"
+            tools:layout_editor_absoluteX="105dp"
+            tools:layout_editor_absoluteY="16dp" />
 
 
         <ImageView
             android:id="@+id/Iv_image"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_toEndOf="@+id/Ib_set_image"
+            android:layout_width="206dp"
+            android:layout_height="249dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center"
             app:srcCompat="@drawable/ic_profile_batman" />
 
-
-        <EditText
-            android:id="@+id/Et_name"
-            android:layout_width="264dp"
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="368dp"
             android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentTop="true"
-            android:layout_toEndOf="@+id/Iv_image"
-            android:ems="10"
-            android:hint="Name"
-            android:inputType="textPersonName" />
+            android:layout_marginTop="11dp"
+            android:text="Name:"
+            android:textStyle="bold" />
 
-        <EditText
-            android:id="@+id/Et_mail"
-            android:layout_width="264dp"
+        <TextView
+            android:id="@+id/showname"
+            android:layout_width="368dp"
+            android:layout_height="20dp"
+            android:layout_alignStart="@+id/name"
+            android:layout_below="@+id/name"
+            android:layout_marginStart="0dp" />
+
+        <TextView
+            android:id="@+id/age"
+            android:layout_width="368dp"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/Et_name"
+            android:layout_below="@+id/showname"
+            android:layout_marginStart="18dp"
             android:layout_toEndOf="@+id/Iv_image"
-            android:ems="10"
-            android:hint="e-Mail"
-            android:inputType="textPersonName" />
+            android:text="Age:"
+            android:textStyle="bold" />
 
-        <EditText
-            android:id="@+id/Et_info"
-            android:layout_width="264dp"
+        <TextView
+            android:id="@+id/showage"
+            android:layout_width="368dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/age" />
+
+        <TextView
+            android:id="@+id/bio"
+            android:layout_width="368dp"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/Et_mail"
-            android:layout_toEndOf="@+id/Iv_image"
-            android:ems="10"
-            android:hint="Short Bio"
-            android:inputType="textPersonName" />
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/showage"
+            android:text="Short bio:"
+            android:textStyle="bold" />
 
+        <TextView
+            android:id="@+id/showbio"
+            android:layout_width="368dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/bio" />
 
-        <EditText
-            android:id="@+id/Et_age"
-            android:layout_width="264dp"
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="368dp"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/Et_info"
-            android:layout_toEndOf="@+id/Iv_image"
-            android:ems="10"
-            android:hint="Age"
-            android:inputType="number" />
+            android:layout_alignStart="@+id/name"
+            android:layout_below="@+id/showbio"
+            android:text="Email:"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/showemail"
+            android:layout_width="368dp"
+            android:layout_height="20dp"
+            android:layout_alignStart="@+id/name"
+            android:layout_below="@+id/email" />
 
         <Button
             android:id="@+id/Bt_add_book"
@@ -80,12 +107,15 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_alignParentEnd="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="33dp"
+            android:layout_marginEnd="57dp"
             android:background="@color/colorAccent"
             android:ems="10"
             android:text="ADD A BOOK" />
 
-
     </RelativeLayout>
+
 
 
 </LinearLayout>

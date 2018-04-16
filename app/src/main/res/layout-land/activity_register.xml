@@ -6,7 +6,7 @@
     android:layout_height="wrap_content"
     tools:context="com.example.nico.first_laboratory_vers2.RegisterActivity"
     android:orientation="vertical"
-    >
+    android:background="@color/colorPrimary">
 
 
     <RelativeLayout
